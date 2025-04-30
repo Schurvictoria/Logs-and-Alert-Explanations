@@ -12,7 +12,6 @@ from src.explainers.openai_explainer import explain as explain_openai
 from src.email.service import send_email, build_anomaly_html
 
 
-# ------------- UI -------------
 st.set_page_config(page_title="BGE + DBSCAN Log Anomalies", layout="wide")
 st.title("BGE-M3 + DBSCAN: Log Anomaly Explorer")
 
@@ -93,7 +92,6 @@ if st.button("Detect anomalies", type="primary", use_container_width=True):
                 explanation = explain_openai(openai_api_key, model_openai, anom_msgs)
             st.markdown(explanation)
 
-        # Email send UI
         to_list = _parse_recipients(to_addrs_text)
         if to_list and st.button("Send anomalies by email", use_container_width=True):
             html = build_anomaly_html("Detected anomalies", anom_msgs)

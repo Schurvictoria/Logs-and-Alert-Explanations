@@ -52,15 +52,15 @@ Open `http://localhost:8501`.
 ## Structure
 ```
 .
-├── app.py                    # Streamlit UI
+├── app.py
 ├── requirements.txt
-├── .env.example              # Environment template
+├── .env.example
 └── src
-    ├── embeddings/bge.py     # BGE loading and encoding
-    ├── clustering/dbscan.py  # DBSCAN and grouping
-    ├── io/parse.py           # file reading + parsing
+    ├── embeddings/bge.py
+    ├── clustering/dbscan.py
+    ├── io/parse.py
     ├── explainers/openai_explainer.py
-    └── email/service.py      # SMTP + HTML email
+    └── email/service.py
 ```
 
 ## Parameter Tips
