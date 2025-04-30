@@ -1,5 +1,7 @@
 # BGE + DBSCAN Log Anomaly Explorer
 
+![Interface](./screenshots/interface.png)
+
 Minimalist tool for log anomaly detection:
 - Semantic embeddings: BGE-M3 (Hugging Face)
 - Clustering: DBSCAN (cosine distance)
